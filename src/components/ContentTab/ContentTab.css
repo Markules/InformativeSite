@@ -1,0 +1,11 @@
+.contentTab{
+
+    border: 1px solid gray;
+    position: relative;
+    width: 50%;
+    height: 650px;
+    text-align: center;
+    left:27%;
+    top:80px;
+    
+}

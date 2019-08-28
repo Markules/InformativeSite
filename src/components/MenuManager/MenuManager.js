@@ -4,6 +4,7 @@ import SlideDrawer from '../SideDrawer/SlideDrawer';
 import Backdrop from '../Backdrop/Backdrop'
 import SideBarMenu from '../SideBarMenu/SideBarMenu'
 
+
 class MenuManager extends Component {
 
     state = {
@@ -33,6 +34,7 @@ class MenuManager extends Component {
             {backdrop}
             <main style={{marginTop: '64px'}}>
             <SideBarMenu />
+
             </main>
           </div>
         );
