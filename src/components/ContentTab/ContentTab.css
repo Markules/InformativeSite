@@ -1,11 +1,11 @@
 .contentTab{
-
-    position: relative;
+    position: absolute;
     width: 60%;
     height: 690px;
     text-align: center;
     left:27%;
-    top:60px;
+    top:90px;
     background-color: white;
+    z-index: 0;
     
 }

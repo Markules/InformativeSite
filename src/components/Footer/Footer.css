@@ -8,3 +8,15 @@
     background-color: white;
 
 }
+
+.copyright{
+    position: absolute;
+    right: 80%;
+    top: 25px;
+}
+
+.designBy{
+    position: absolute;
+    right: 5%;
+    top: 25px;
+}

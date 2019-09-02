@@ -16,7 +16,7 @@ class App extends Component {
           <ContentTab />
         </div>
         <div>
-      <Footer />
+        <Footer />
         </div>
       </div>
     )

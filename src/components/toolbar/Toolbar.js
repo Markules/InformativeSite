@@ -14,8 +14,25 @@ const Toolbar = props => (
             <div className="toolbar_navigiation_items">
                 <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="/">Technologies</a></li>
-                <li><a href="/">Solutions</a></li>
+                <div className="dropdown">
+                    <li className="dropbtn">Technologies</li>
+                        <div className="dropdown-content">
+                            <a href="#">Technologies and processes - TMBTS 2000</a>
+                            <a href="#">Technologies and processes - TMBTS 2018</a>
+                        </div>
+                </div>
+                <div className="dropdown">
+                <li className="dropbtn">Solutions</li>
+                <div className="dropdown-content">
+                            <a href="#">Solutions (List)</a>
+                            <a href="#">Water Supply</a>
+                            <a href="#">Sewage</a>
+                            <a href="#">Waste</a>
+                            <a href="#">Energy & Transport</a>
+                            <a href="#">AgroTech</a>
+                            <a href="#">Environmental</a>
+                        </div>
+                </div>
                 <li><a href="/">Equipment (Projects)</a></li>
                 <li><a href="/">Info</a></li>
                 </ul>
