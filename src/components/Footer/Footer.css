@@ -1,11 +1,10 @@
-.contentTab{
-
-    position: relative;
+.footer {
+    position: fixed;
     width: 60%;
-    height: 690px;
+    height: 70px;
     text-align: center;
     left:27%;
-    top:60px;
+    bottom: 20px;
     background-color: white;
-    
+
 }
