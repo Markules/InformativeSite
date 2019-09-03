@@ -11,7 +11,7 @@
     display: flex;
     height: 100%;
     align-items: center;
-    padding: 0 1rem;
+    padding: 0 8rem;
 
 }
 
@@ -38,17 +38,25 @@
 
 .toolbar_navigiation_items li {
     padding: 0 0.5rem;
+    text-decoration: none;
 }
 
 .toolbar_navigiation_items a {
     color: white;
     text-decoration: none;
+    display: flex;
+    top: 5px;
 
 }
 .toolbar_navigiation_items a:hover,
 .toolbar_navigiation_items a:active{
     background-color: #fa923f;
     
+    
+}
+
+ .dropdown li {
+    border: none !important;
 }
 
 .dropbtn {
@@ -56,15 +64,13 @@
     padding: 16px;
     font-size: 16px;
     border: none;
-    
-    
-  }
 
+  }
   .dropdown {
     position: relative;
     display: inline-block;
-     
   }
+
 
   .dropdown-content {
     display: none;
@@ -76,7 +82,7 @@
   }
 
   /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: red;}
+.dropdown-content a:hover {background-color: #fa923f;}
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {display: block;}

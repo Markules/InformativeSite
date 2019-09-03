@@ -13,7 +13,10 @@ const Toolbar = props => (
             <div className="spacer" />
             <div className="toolbar_navigiation_items">
                 <ul>
-                <li><a href="/">Home</a></li>
+                <div className="dropdown">   
+                <li className="dropbtn"><a href="/">Home</a></li>
+                <div className="dropdown-content"></div>
+                </div>
                 <div className="dropdown">
                     <li className="dropbtn">Technologies</li>
                         <div className="dropdown-content">
@@ -33,8 +36,29 @@ const Toolbar = props => (
                             <a href="#">Environmental</a>
                         </div>
                 </div>
-                <li><a href="/">Equipment (Projects)</a></li>
-                <li><a href="/">Info</a></li>
+                <div className="dropdown">
+                <li className="dropbtn">Equipment (Projects)</li>
+                    <div className="dropdown-content">
+                            <a href="#">Tornado</a>
+                            <a href="#">Stainer</a>
+                            <a href="#">Reactor</a>
+                            <a href="#">Greenhouse</a>
+                            <a href="#">Glasier</a>
+                            <a href="#">Medusa</a>
+                            <a href="#">Triton</a>
+                            <a href="#">BIONT 2000</a>
+                            <a href="#">Water Generator</a>
+                    </div>
+                </div>
+                <div className="dropdown">
+                <li className="dropbtn">Info</li>
+                <div className="dropdown-content">
+                            <a href="#">FAQ</a>
+                            <a href="#">Articles</a>
+                            <a href="#">Glossary</a>
+                            <a href="#">Links</a>
+                </div>
+                </div>
                 </ul>
             </div>
         </nav>

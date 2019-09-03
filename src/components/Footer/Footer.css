@@ -1,22 +1,30 @@
 .footer {
-    position: fixed;
+    position: absolute;
     width: 60%;
     height: 70px;
     text-align: center;
     left:27%;
     bottom: 20px;
     background-color: white;
-
 }
 
 .copyright{
     position: absolute;
-    right: 80%;
+    right: 77%;
     top: 25px;
+    white-space: nowrap;
+    overflow: hidden;
+    padding-left: 1rem;
 }
 
 .designBy{
     position: absolute;
     right: 5%;
     top: 25px;
+}
+
+@media (max-width: 768px) {
+    .copyright {
+        right: 50%;
+    }
 }
