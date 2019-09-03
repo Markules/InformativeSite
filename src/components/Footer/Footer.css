@@ -21,6 +21,12 @@
     position: absolute;
     right: 5%;
     top: 25px;
+    
+}
+
+.designBy a {
+    text-decoration: none;
+    color:coral;
 }
 
 @media (max-width: 768px) {
