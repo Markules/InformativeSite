@@ -8,7 +8,9 @@ import SideBarMenu from '../SideBarMenu/SideBarMenu'
 class MenuManager extends Component {
 
     state = {
-        sideDrawerOpen: false
+        sideDrawerOpen: false,
+        home: false,
+        technologiesTMBTS2000: false,
       };
       
       drawerToggleClickHandler = () => {
@@ -20,6 +22,18 @@ class MenuManager extends Component {
       backdropClickHandler = () => {
       this.setState({sideDrawerOpen: false});
       };
+
+      onHomeButtonPress = (e) => {
+        e.preventDefault();
+        this.setState({home: true});
+        alert('home:' + this.state.home)
+    };
+
+    onTechnologiesTMBTS2000ButtonPress  = (e) => {
+      e.preventDefault();
+      this.setState({technologiesTMBTS2000: true});
+      alert('TMBTS2000:' + this.state.technologiesTMBTS2000)
+  };
       
        render(){ 
          let backdrop;
@@ -33,7 +47,10 @@ class MenuManager extends Component {
             <SlideDrawer show={this.state.sideDrawerOpen} />
             {backdrop}
             <main style={{marginTop: '64px'}}>
-            <SideBarMenu />
+            <SideBarMenu 
+            onHomeButtonPress={this.onHomeButtonPress}
+            onTechnologiesTMBTS2000ButtonPress={this.onTechnologiesTMBTS2000ButtonPress}
+            />
 
             </main>
           </div>

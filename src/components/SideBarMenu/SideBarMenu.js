@@ -1,6 +1,5 @@
 import React from 'react';
 import './SideBarMenu.css';
-import Dropdown from 'react-dropdown';
 import 'react-dropdown/style.css';
 
 
@@ -12,6 +11,7 @@ class SideBarMenu extends React.Component{
        
         this.state = {
               displayMenu: false,
+             
             };
 
             this.showDropdownMenu = this.showDropdownMenu.bind(this);
@@ -31,6 +31,9 @@ class SideBarMenu extends React.Component{
               document.removeEventListener('click', this.hideDropdownMenu);
             });
         }
+
+     
+
        
 
     render(){
@@ -39,22 +42,18 @@ class SideBarMenu extends React.Component{
         <nav className="sideBarMenu_navigation">
             <div className="sideBarMenu_navigiation_items">
                 <ul>
-                    <li><a href="/">Home</a></li>
-                    <li>
-                         <div  className="dropdown" >
-                         <div className="button" onClick={this.showDropdownMenu}>Technologies</div>
-                         { this.state.displayMenu ? (
-                        <ul>
-                            <li><a href="/">TMBTS - 2000</a></li>
-                            <li><a href="/">TMBTS - 2018</a></li>
-                        </ul>
-                        ):
-                        (
-                            null
-                        )
-                         }
+                    <li onClick={this.props.onHomeButtonPress}><a href="/">Home</a></li>
+                         <div className="dropdown" >
+                         <li onClick={this.props.onTechnologiesTMBTS2000ButtonPress} className="dropbtn"
+                            >Technologies</li>
+                                <div className="dropdown-content">
+                                     <a href="/">TMBTS - 2000</a>
+                                     <a href="/">TMBTS - 2018</a>
+                                </div>
                         </div>
-                    </li>
+                    
+
+                    
                     
                     <li><a href="/">Solutions</a></li>
                     <li><a href="/">Equipment (Projects)</a></li>

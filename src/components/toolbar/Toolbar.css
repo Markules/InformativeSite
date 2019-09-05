@@ -12,7 +12,6 @@
     height: 100%;
     align-items: center;
     padding: 0 8rem;
-
 }
 
 .toolbar_logo {
@@ -33,12 +32,13 @@
     margin: 0;
     padding: 0;
     display: flex;
-
 }
 
 .toolbar_navigiation_items li {
     padding: 0 0.5rem;
     text-decoration: none;
+    cursor: pointer;
+    
 }
 
 .toolbar_navigiation_items a {
@@ -51,12 +51,11 @@
 .toolbar_navigiation_items a:hover,
 .toolbar_navigiation_items a:active{
     background-color: #fa923f;
-    
-    
 }
 
  .dropdown li {
     border: none !important;
+
 }
 
 .dropbtn {

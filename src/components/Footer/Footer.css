@@ -29,6 +29,10 @@
     color:coral;
 }
 
+.designBy a:hover {
+    color: #521751;
+} 
+
 @media (max-width: 768px) {
     .copyright {
         right: 50%;
