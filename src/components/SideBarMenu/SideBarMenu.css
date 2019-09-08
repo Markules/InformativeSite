@@ -1,11 +1,14 @@
 .sideBarMenu {
     position: absolute;
     top: 150px;
-    left: 5%;
+    left: 3%;
     width: 300px;
     background: #521751;
     height: 500px;
     border-radius: 0.3rem;
+    -webkit-flex: none;
+    flex: none;
+    width: 300px;
 }
 
 .sideBarMenu_navigation {
@@ -13,6 +16,7 @@
     height: 100%;
     align-items: center;
     padding: 0 0.5rem;
+    
 
 }
 
@@ -24,7 +28,6 @@
 }
 
 .sideBarMenu_navigiation_items li {
-    position: relative;
     padding: 0 0.5rem;
     padding-top: 1.5rem;
     border: 1px white solid;
@@ -35,6 +38,7 @@
     height: 75px;
     border-radius: 0.25rem;
     color: #521751;
+    
     
 }
 
@@ -51,7 +55,7 @@
     color: #fa923f;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     .sideBarMenu {
     display: none;
     }

@@ -35,6 +35,8 @@ cultivation of aquatic vegetation according to a vertical pattern - in multi-tie
 environmental measures related to the rehabilitation of marine and freshwater areas, the protection of hydrobionts at water intake facilities and the reduction of flue gas emissions into the atmosphere.
 </p> </div>
 
+<br></br>
+
 
 <div className="technologiesTMBTS2000_EN"
     value={this.state.technologiesTMBTS2000}

@@ -38,3 +38,9 @@
         right: 50%;
     }
 }
+
+@media (max-width: 1270px) {
+    .footer {
+        left: 35%;
+    }
+}
