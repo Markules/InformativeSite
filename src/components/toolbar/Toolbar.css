@@ -51,7 +51,6 @@
 .toolbar_navigiation_items a:hover,
 .toolbar_navigiation_items a:active{
     background-color: #fa923f;
-    
 }
 
  .dropdown li {
@@ -62,15 +61,15 @@
 .dropbtn {
     color: white;
     padding: 16px;
-    font-size: 16px;
+    font-size: 15px;
     border: none;
 
   }
   .dropdown {
     position: relative;
     display: inline-block;
+    
   }
-
 
   .dropdown-content {
     display: none;
@@ -92,6 +91,8 @@
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
     background-color: #fa923f;
+    margin-bottom: 3px;
+    padding: 5px;
     
 }
 
