@@ -19,5 +19,14 @@
 @media (max-width: 1270px) {
     .contentTab {
         margin-left: 35%;
+        height: 750px;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 770px) {
+    .contentTab {
+        margin-left: 35%;
+        
     }
 }
