@@ -1,6 +1,5 @@
 import React from 'react';
 import './SideBarMenu.css';
-import 'react-dropdown/style.css';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 
@@ -45,19 +44,21 @@ class SideBarMenu extends React.Component{
             <div className="sideBarMenu_navigiation_items">
                 <ul>
                     <Link to={'/home'}>
-                    <li onClick={this.props.onHomeButtonPress}><a href="/">Home</a></li>
+                    <li onClick={this.props.onHomeButtonPress}>Home</li>
                     </Link>
                          <div className="dropdown" >
                          <li onClick={this.props.onTechnologiesTMBTS2000ButtonPress} className="dropbtn"
                             >Technologies</li>
                                 <div className="dropdown-content">
-                                     <a href="/">TMBTS - 2000</a>
-                                     <a href="/">TMBTS - 2018</a>
+                                    <ul>
+                                     <li><a href="/">TMBTS - 2000</a></li>
+                                     <li><a href="/">TMBTS - 2018</a></li>
+                                     </ul>
                                 </div>
                         </div>
-                    <li><a href="/">Solutions</a></li>
-                    <li><a href="/">Equipment (Projects)</a></li>
-                    <li><a href="/">Info</a></li>
+                    <li>Solutions</li>
+                    <li>Equipment (Projects)</li>
+                    <li>Info</li>
                 </ul>
             </div>
         </nav>
