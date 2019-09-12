@@ -9,7 +9,9 @@
     -webkit-flex: none;
     flex: none;
     width: 300px;
-    
+    overflow: hidden;
+    min-height: 60%;
+
 }
 
 .sideBarMenu_navigation {
@@ -41,6 +43,7 @@
     color: #521751;
     font-size: 15px;
     margin-left: 7px;
+
 
 }
 
